@@ -184,6 +184,27 @@ html {
   cursor: pointer;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.home h1 {
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.home img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
 /* Media Query */
 
 @media (max-width: 991px) {
@@ -192,6 +213,10 @@ html {
   }
 
   .header {
+    padding: 2rem;
+  }
+
+  section {
     padding: 2rem;
   }
 }
