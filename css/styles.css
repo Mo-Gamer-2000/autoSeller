@@ -572,6 +572,40 @@ section {
   .vehicle .slider .wrapper .preNext#preBtn {
     width: 20vw;
   }
+
+  .featured-slider .featured-wrapper .fPreNext {
+    padding-top: 30%;
+  }
+
+  .featured-slider .featured-wrapper .featured-wrapper2 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .featured-slider
+    .featured-wrapper
+    .featured-wrapper2
+    .featured-wrapper-box
+    .box {
+    display: none;
+  }
+
+  .featured-slider
+    .featured-wrapper
+    .featured-wrapper2
+    .featured-wrapper-box
+    .box.active {
+    display: block;
+  }
+
+  .featured-slider
+    .featured-wrapper
+    .featured-wrapper2
+    .featured-wrapper-box
+    .box.active
+    img {
+    width: 65vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -601,5 +635,9 @@ section {
   .vehicle .slider .wrapper .preNext#preBtn {
     width: 15vw;
     padding-top: 17%;
+  }
+
+  .featured-slider .featured-wrapper .fPreNext {
+    padding-top: 40%;
   }
 }
