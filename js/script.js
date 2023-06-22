@@ -82,7 +82,9 @@ let changeBox = () => {
       activeBox[i].classList.add("active");
       activeLabel[i].classList.add("fa-solid");
 
-      wrapper.style.transform = `translateX(${indexNo * -250}px)`;
+      if (window.screen.width > 768) {
+        wrapper.style.transform = `translateX(${indexNo * -250}px)`;
+      }
     } else {
       activeBox[i].classList.remove("active");
       activeLabel[i].classList.remove("fa-solid");
