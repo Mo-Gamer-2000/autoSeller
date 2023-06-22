@@ -91,3 +91,45 @@ let changeBox = () => {
     }
   }
 };
+
+let fWrapper = document.querySelector(".featured-wrapper-box");
+let fActBox = fWrapper.querySelectorAll(".box");
+let fActLabel = document
+  .querySelector(".fActCircle")
+  .querySelectorAll(".fa-circle");
+let fNextBtn = document.querySelector("#fNextBtn");
+let fPreBtn = document.querySelector("#fPreBtn");
+
+let fIndex = 0;
+
+fNextBtn.onclick = () => {
+  fIndex++;
+  fChangeBox();
+};
+
+fPreBtn.onclick = () => {
+  fIndex--;
+  fChangeBox();
+};
+
+let fChangeBox = () => {
+  if (fIndex > fActBox.length - 1) {
+    fIndex = 0;
+  } else if (fIndex < 0) {
+    fIndex - fActBox.length - 1;
+  }
+
+  for (let i = 0; i < fActBox.length; i++) {
+    if (i === fIndex) {
+      fActBox[i].classList.add("active");
+      fActLabel[i].classList.add("fa-solid");
+
+      if (window.screen.width > 768) {
+        fWrapper.style.transform = `translateX(${fIndex * -21}vw)`;
+      }
+    } else {
+      fActBox[i].classList.remove("active");
+      fActLabel[i].classList.remove("fa-solid");
+    }
+  }
+};
