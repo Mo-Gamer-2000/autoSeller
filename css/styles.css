@@ -338,6 +338,22 @@ section {
   margin-left: 24vw;
 }
 
+.vehicle .slider .wrapper .wrapper-box .box {
+  width: 300px;
+  text-align: center;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box img {
+  cursor: pointer;
+  width: 250px;
+  opacity: 0.5;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box .content {
+  margin-top: 5rem;
+  display: none;
+}
+
 /* Media Query */
 
 @media (max-width: 991px) {
