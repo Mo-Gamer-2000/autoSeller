@@ -504,6 +504,56 @@ section {
   color: var(--black);
 }
 
+.subscribe {
+  padding: 6rem;
+  text-align: center;
+  background: url(../images/carbg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe h3 {
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.subscribe p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.subscribe form {
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+
+.subscribe form input[type="email"] {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 0 2rem;
+}
+
+.subscribe form input[type="submit"] {
+  height: 100%;
+  width: 17rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  background: var(--light-yellow);
+  cursor: pointer;
+}
+
+.subscribe form input[type="submit"]:hover {
+  background: var(--yellow);
+}
+
 /* Media Query */
 
 @media (max-width: 991px) {
