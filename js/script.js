@@ -133,3 +133,45 @@ let fChangeBox = () => {
     }
   }
 };
+
+let rWrapper = document.querySelector(".review-wrapper-box");
+let rActBox = rWrapper.querySelectorAll(".box");
+let rActLabel = document
+  .querySelector(".rActCircle")
+  .querySelectorAll(".fa-circle");
+let rNextBtn = document.querySelector("#rNextBtn");
+let rPreBtn = document.querySelector("#rPreBtn");
+
+let rIndex = 0;
+
+rNextBtn.onclick = () => {
+  rIndex++;
+  rChangeBox();
+};
+
+rPreBtn.onclick = () => {
+  rIndex--;
+  rChangeBox();
+};
+
+let rChangeBox = () => {
+  if (rIndex > rActBox.length - 1) {
+    rIndex = 0;
+  } else if (rIndex < 0) {
+    rIndex - rActBox.length - 1;
+  }
+
+  for (let i = 0; i < rActBox.length; i++) {
+    if (i === rIndex) {
+      rActBox[i].classList.add("active");
+      rActLabel[i].classList.add("fa-solid");
+
+      if (window.screen.width > 768) {
+        rWrapper.style.transform = `translateX(${rIndex * -20}vw)`;
+      }
+    } else {
+      rActBox[i].classList.remove("active");
+      rActLabel[i].classList.remove("fa-solid");
+    }
+  }
+};
