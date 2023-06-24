@@ -749,6 +749,28 @@ section {
     img {
     width: 65vw;
   }
+
+  .review-slider .rPreNext {
+    padding-top: 20%;
+    width: 18vw;
+  }
+
+  .reviews .review-slider .review-wrapper {
+    margin: auto;
+  }
+
+  /* .reviews .review-slider .review-wrapper .box {
+    transform: translateX(0vw);
+    display: none;
+  }
+
+  .reviews .review-slider .review-wrapper .box.active {
+    display: flex;
+  }
+
+  .reviews .review-slider .review-wrapper .box.active .content {
+    width: 55vw;
+  } */
 }
 
 @media (max-width: 450px) {
@@ -782,5 +804,10 @@ section {
 
   .featured-slider .featured-wrapper .fPreNext {
     padding-top: 40%;
+  }
+
+  .review-slider .rPreNext {
+    padding-top: 30%;
+    width: 14vw;
   }
 }
